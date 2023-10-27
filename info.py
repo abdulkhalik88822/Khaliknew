@@ -21,7 +21,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', "")
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
-PICS = (environ.get('PICS', 'https://telegra.ph/file/0ba8d62f12c1ea90a7832.jpg https://telegra.ph/file/64bff5d3a9c77474f026d.jpg https://telegra.ph/file/17b596e38eeadcd8ad93a.jpg https://telegra.ph/file/f68308029f2f9932ffb36.jpg https://telegra.ph/file/26088457e796f025f9b9e.jpg https://telegra.ph/file/1c3df48235fca73541d73.jpg')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/aeb803fa0c276d76cd8e9.jpg https://telegra.ph/file/856d06f86932b36a28e06.jpg https://telegra.ph/file/8d54bc8ce3281d5f30f38.jpg https://telegra.ph/file/810ecd1858046491ae7a0.jpg https://telegra.ph/file/bade22f4d26d95ff99444.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://te.legra.ph/file/a27dc8fe434e6b846b0f8.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://te.legra.ph/file/6f55d902f9bf2d0afd4bb.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5cbb8.jpg")
@@ -49,10 +49,10 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'ziplinker.net')
-SHORTLINK_API = environ.get('SHORTLINK_API', '388ed97f90606d81da656088cc6721395b699bba')
-SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', 'ziplinker.net')
-SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', '388ed97f90606d81da656088cc6721395b699bba')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'flashlinks.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'b1ac11b7e5467e6d42477f1d307bdfd5c6d3aa3e')
+SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', 'flashlinks.in')
+SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', 'b1ac11b7e5467e6d42477f1d307bdfd5c6d3aa3e')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
