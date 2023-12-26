@@ -379,7 +379,7 @@ async def start(client, message):
                     InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
                 ]]
                 await message.reply_text(
-                    text="<b>You are not verified !\nKindly verify to continue !</b>",
+                    text="<b>YOU ARE NOT VERIFIED TODAY. PLEASE VERIFY AND GET UNLIMITED ACCESS FOR 12 hours इस बोट को इस्तमाल करने के लिए आपको 12 घंटे में एक बार VERIFY करना होगा। VERIFY किए बिना आप मूवीज को डाउनलोड नहीं कर पाएंगें। 👉How To Verify👈</b>",
                     protect_content=True,
                     reply_markup=InlineKeyboardMarkup(btn)
                 )
@@ -401,7 +401,7 @@ async def start(client, message):
             )
             filetype = msg.media
             file = getattr(msg, filetype.value)
-            title = '@New_Moviee_hindi ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), file.file_name.split()))
+            title = '@pathan_h ' + ' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), file.file_name.split()))
             size=get_size(file.file_size)
             f_caption = f"<code>{title}</code>"
             if CUSTOM_FILE_CAPTION:
@@ -435,7 +435,7 @@ async def start(client, message):
             InlineKeyboardButton("Verify", url=await get_token(client, message.from_user.id, f"https://telegram.me/{temp.U_NAME}?start="))
         ]]
         await message.reply_text(
-            text="<b>You are not verified !\nKindly verify to continue !</b>",
+            text="<b>YOU ARE NOT VERIFIED TODAY. PLEASE VERIFY AND GET UNLIMITED ACCESS FOR 12 hours इस बोट को इस्तमाल करने के लिए आपको 12 घंटे में एक बार VERIFY करना होगा। VERIFY किए बिना आप मूवीज को डाउनलोड नहीं कर पाएंगें। 👉How To Verify👈</b>",
             protect_content=True,
             reply_markup=InlineKeyboardMarkup(btn)
         )
